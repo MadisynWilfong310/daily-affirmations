@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    Background: linear-gradient(135deg, #bebbfc, #1900f8);  
+    color: #333;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.site-header {
+    background-color: rgba(255,255,255, 0.7);
+    padding: 3rem 1rem;
+    border-bottom: 2px solid #5b00f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.site-header h1 {
+    font-size: 2rem;
+   font-weight: 600;
+    color: #333;
+}
+.affirmation-box {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15rem;
+    padding: 2rem;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    min-height: 4rem;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+.affirmation-box.hidden {
+    opacity: 0;
+    min-height: 4rem;
+    
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-top: 2px solid #2100f8;
+}
+#affirmationButton{
+   padding: 1rem 2rem;
+    background-color: #1d0336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.controls button {
+    margin:0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+.controls button:hover {
+    transform: scale(1.05);
+}
+body.dark{
+    background: #222; color: #eee;
+}
+body.dark .affirmation-box {
+    background-color: #eee;
+    color: #fff;
+}
